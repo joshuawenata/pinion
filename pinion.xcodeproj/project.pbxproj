@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BFB97F2F2BBBC2B800F17431 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB97F2E2BBBC2B800F17431 /* SplashScreen.swift */; };
+		A6BE7AFE2BBBD920006EDF5D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BE7AFD2BBBD920006EDF5D /* HomeView.swift */; };
+		A6BE7B032BBBF176006EDF5D /* CardIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BE7B022BBBF176006EDF5D /* CardIn.swift */; };
+		A6BE7B052BBC2492006EDF5D /* CardOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BE7B042BBC2492006EDF5D /* CardOut.swift */; };
+		A6BE7B072BBC2512006EDF5D /* Back.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BE7B062BBC2512006EDF5D /* Back.swift */; };
+		A6BE7B092BBC251A006EDF5D /* Forward.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BE7B082BBC251A006EDF5D /* Forward.swift */; };
+		A6BE7B0B2BBC2964006EDF5D /* CardDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BE7B0A2BBC2964006EDF5D /* CardDestination.swift */; };
+		BFB97F2F2BBBC2B800F17431 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB97F2E2BBBC2B800F17431 /* SplashView.swift */; };
 		CD58C24F2BBBB255008D0911 /* pinionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD58C24E2BBBB255008D0911 /* pinionApp.swift */; };
 		CD58C2512BBBB255008D0911 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD58C2502BBBB255008D0911 /* ContentView.swift */; };
 		CD58C2532BBBB259008D0911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD58C2522BBBB259008D0911 /* Assets.xcassets */; };
@@ -35,7 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BFB97F2E2BBBC2B800F17431 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		A6BE7AFD2BBBD920006EDF5D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A6BE7B022BBBF176006EDF5D /* CardIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardIn.swift; sourceTree = "<group>"; };
+		A6BE7B042BBC2492006EDF5D /* CardOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardOut.swift; sourceTree = "<group>"; };
+		A6BE7B062BBC2512006EDF5D /* Back.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Back.swift; sourceTree = "<group>"; };
+		A6BE7B082BBC251A006EDF5D /* Forward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forward.swift; sourceTree = "<group>"; };
+		A6BE7B0A2BBC2964006EDF5D /* CardDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDestination.swift; sourceTree = "<group>"; };
+		BFB97F2E2BBBC2B800F17431 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		CD58C24B2BBBB255008D0911 /* pinion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pinion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD58C24E2BBBB255008D0911 /* pinionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pinionApp.swift; sourceTree = "<group>"; };
 		CD58C2502BBBB255008D0911 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +85,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A6BE7AFF2BBBE3DB006EDF5D /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				A6BE7B022BBBF176006EDF5D /* CardIn.swift */,
+				A6BE7B042BBC2492006EDF5D /* CardOut.swift */,
+				A6BE7B062BBC2512006EDF5D /* Back.swift */,
+				A6BE7B082BBC251A006EDF5D /* Forward.swift */,
+				A6BE7B0A2BBC2964006EDF5D /* CardDestination.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		CD58C2422BBBB255008D0911 = {
 			isa = PBXGroup;
 			children = (
@@ -96,11 +120,13 @@
 		CD58C24D2BBBB255008D0911 /* pinion */ = {
 			isa = PBXGroup;
 			children = (
+				A6BE7AFF2BBBE3DB006EDF5D /* Component */,
 				CD58C24E2BBBB255008D0911 /* pinionApp.swift */,
 				CD58C2502BBBB255008D0911 /* ContentView.swift */,
-				BFB97F2E2BBBC2B800F17431 /* SplashScreen.swift */,
+				BFB97F2E2BBBC2B800F17431 /* SplashView.swift */,
 				CD58C2522BBBB259008D0911 /* Assets.xcassets */,
 				CD58C2542BBBB259008D0911 /* Preview Content */,
+				A6BE7AFD2BBBD920006EDF5D /* HomeView.swift */,
 			);
 			path = pinion;
 			sourceTree = "<group>";
@@ -260,9 +286,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFB97F2F2BBBC2B800F17431 /* SplashScreen.swift in Sources */,
+				A6BE7B052BBC2492006EDF5D /* CardOut.swift in Sources */,
+				A6BE7B0B2BBC2964006EDF5D /* CardDestination.swift in Sources */,
+				BFB97F2F2BBBC2B800F17431 /* SplashView.swift in Sources */,
 				CD58C2512BBBB255008D0911 /* ContentView.swift in Sources */,
+				A6BE7AFE2BBBD920006EDF5D /* HomeView.swift in Sources */,
 				CD58C24F2BBBB255008D0911 /* pinionApp.swift in Sources */,
+				A6BE7B092BBC251A006EDF5D /* Forward.swift in Sources */,
+				A6BE7B072BBC2512006EDF5D /* Back.swift in Sources */,
+				A6BE7B032BBBF176006EDF5D /* CardIn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
