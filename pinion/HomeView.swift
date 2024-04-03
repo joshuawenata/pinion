@@ -1,4 +1,5 @@
 import SwiftUI
+import Foundation
 
 struct HomeView: View {
     var terminalLabel: String
@@ -18,10 +19,10 @@ struct HomeView: View {
                 Spacer()
                 
                 HStack(alignment: .center) {
-                    CardIn(number: "10")
+                    CardIn(number: String(Int(arc4random_uniform(100)) + 1))
                         .padding(.top, 20)
                         .padding(.horizontal, 50)
-                    CardOut(number: "20")
+                    CardOut(number: String(Int(arc4random_uniform(100)) + 1))
                         .padding(.top, 20)
                         .padding(.horizontal, 50)
                 }
