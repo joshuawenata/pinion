@@ -40,6 +40,8 @@ struct CardDestination: View {
                 }
                 .padding(.horizontal, 50)
                 
+                Spacer()
+                
                 VStack(alignment: .trailing) {
                     // Using dateFormatter to format date
                     Text(dateFormatter.string(from: Date()))

@@ -124,9 +124,9 @@
 				CD58C24E2BBBB255008D0911 /* pinionApp.swift */,
 				CD58C2502BBBB255008D0911 /* ContentView.swift */,
 				BFB97F2E2BBBC2B800F17431 /* SplashView.swift */,
+				A6BE7AFD2BBBD920006EDF5D /* HomeView.swift */,
 				CD58C2522BBBB259008D0911 /* Assets.xcassets */,
 				CD58C2542BBBB259008D0911 /* Preview Content */,
-				A6BE7AFD2BBBD920006EDF5D /* HomeView.swift */,
 			);
 			path = pinion;
 			sourceTree = "<group>";
