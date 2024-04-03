@@ -30,17 +30,17 @@ struct CardDestination: View {
                 .frame(width: .infinity, height: 200)
             
             // Content inside RoundedRectangle
-            HStack {
-                VStack {
+            HStack(alignment: .firstTextBaseline) {
+                VStack(alignment: .leading) {
                     Text("Bis Menuju")
                         .font(.title3)
                     Text(label)
                         .bold()
                         .font(.system(size: 70))
                 }
-                .padding(.horizontal, 90)
+                .padding(.horizontal, 50)
                 
-                VStack {
+                VStack(alignment: .trailing) {
                     // Using dateFormatter to format date
                     Text(dateFormatter.string(from: Date()))
                         .font(.title3)
@@ -50,7 +50,7 @@ struct CardDestination: View {
                         .bold()
                         .font(.system(size: 70))
                 }
-                .padding(.horizontal, 140)
+                .padding(.horizontal, 50)
             }
             .frame(width: .infinity, height: 200)
         }

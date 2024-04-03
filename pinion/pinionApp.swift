@@ -1,16 +1,10 @@
-//
-//  pinionApp.swift
-//  pinion
-//
-//  Created by Jason Susanto on 02/04/24.
-//
-
 import SwiftUI
 
 @main
-struct pinionApp: App {
+struct PinionApp: App {
     var body: some Scene {
         WindowGroup {
+            // Pass the currentIndex state to ContentView
             ContentView()
         }
     }
