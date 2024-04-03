@@ -1,28 +1,25 @@
-//
-//  Forward.swift
-//  pinion
-//
-//  Created by Joshua Wenata Sunarto on 02/04/24.
-//
-
 import SwiftUI
 
 struct Forward: View {
     var label: String
+    var terminalLabel: String
+    var busStop: [String]
+    @Binding var currentIndex: Int
     
     var body: some View {
-        HStack {
-            let customColor: Color = Color(red: 30/255, green: 178/255, blue: 166/255) // Divide by 255
-            Text(label)
-                .font(.largeTitle)
-            Image(systemName: "arrow.forward.square.fill")
-                .font(.system(size: 100))
-                .foregroundColor(customColor)
+        Button(action: {
+            currentIndex += 1
+        }) {
+            HStack {
+                let customColor = Color(red: 30/255, green: 178/255, blue: 166/255) // Divide by 255
+                Image(systemName: "arrow.right.square.fill")
+                    .font(.system(size: 100))
+                    .foregroundColor(customColor)
+                Text(label)
+                    .font(.largeTitle)
+            }
+            .foregroundColor(.black)
         }
+        .disabled(currentIndex==busStop.count-1)
     }
-}
-
-
-#Preview {
-    Forward(label: "Naturale")
 }

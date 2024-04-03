@@ -1,10 +1,9 @@
 import SwiftUI
 
 struct HomeView: View {
-    var terminalLabel:String
-    var stopLabel:String
-    var backLabel:String
-    var nextLabel:String
+    var terminalLabel: String
+    var busStop: Array<String>
+    @Binding var currentIndex: Int
     
     var body: some View {
         ZStack(alignment: .top) {
@@ -13,8 +12,7 @@ struct HomeView: View {
                 .aspectRatio(contentMode: .fit)
             
             VStack(alignment: .center) {
-                
-                CardDestination(label: stopLabel)
+                CardDestination(label: busStop[currentIndex])
                     .padding(.top, 130)
                 
                 Spacer()
@@ -22,23 +20,20 @@ struct HomeView: View {
                 HStack(alignment: .center) {
                     CardIn(number: "10")
                         .padding(.top, 20)
+                        .padding(.horizontal, 50)
                     CardOut(number: "20")
                         .padding(.top, 20)
+                        .padding(.horizontal, 50)
                 }
                 HStack {
-                    Back(label: backLabel)
+                    Back(label: currentIndex > 0 ? busStop[currentIndex-1] : "None", terminalLabel: terminalLabel, busStop: busStop, currentIndex: $currentIndex)
                         .padding()
                     Spacer()
-                    Forward(label: nextLabel)
+                    Forward(label: currentIndex < busStop.count - 1 ? busStop[currentIndex+1] : "None", terminalLabel: terminalLabel, busStop: busStop, currentIndex: $currentIndex)
                         .padding()
                 }
             }
             
-            Image("TopMostImage") // Your topmost image
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 100, height: 100)
-                .padding(.top, 20) // Adjust the top padding as needed
         }
     }
 
@@ -46,6 +41,6 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(terminalLabel: "Intermoda De Park (Rute 2)", stopLabel: "Studento", backLabel: "Fiore", nextLabel: "Naturale")
+        HomeView(terminalLabel: "Intermoda De Park (Rute 2)", busStop: ["test"], currentIndex: .constant(0))
     }
 }
