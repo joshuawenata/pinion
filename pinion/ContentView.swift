@@ -15,7 +15,7 @@ struct ContentView: View {
                         }
                     }
             } else {
-                HomeView(terminalLabel: "Intermoda De Park (Rute 2)", busStop: busStops, currentIndex: $currentIndex)
+                PickRuteView(currentIndex: $currentIndex, busStop: busStops)
             }
         }
     }
